@@ -1,0 +1,47 @@
+%! Author = t.kramer
+%! Date = 10/06/2023
+
+\pagebreak
+\section{Conclusion}
+
+We proposed a novel framework that integrates the potential of open-source simulation software, data science, and \gls{ai} to improve the representation of individual and spatial diversity in thermal comfort during the building design process. With \textit{comfortSIM}, we are currently developing an open source module that facilitates the implementation of our idea in the practice of thermal comfort prediction. To test the validity of the created framework, we performed a case study. This exemplary study led to the following key findings:
+
+\begin{itemize}
+
+    \item All \gls{ml} algorithms tested based on real-world data and incorporating nuances of personal diversity in thermal comfort perception achieved more than twice the accuracy of the standard \gls{pmv} method, which showed significant weaknesses in predicting discomfort and preferred change in indoor environmental conditions among building occupants.
+
+    \item Using \gls{sta} as a long-term thermal comfort metric in the early stages of building design provides multidimensional design feedback and, if optimised, leads to more energy efficient and autonomous buildings.
+    
+    \item If based on the \gls{pmv} index, the calculated \gls{sta} was significantly lower for all investigated scenarios, emphasising the \gls{pmv} tendency to promote narrower temperature ranges than evidence-based methods such as the adaptive model or real-world data-driven \gls{ml} algorithms.
+
+    \item For temperature climates such as Brisbane, high \gls{sta} can be achieved when using \gls{pcs}; in both cases, the combination of \gls{ml} algorithms and \gls{pcs} predicted significantly higher values of \gls{sta} than conventional models.
+
+    \item For air-conditioned buildings, even in wider set point ranges of up to 18-28°C, using \gls{pcs} can significantly enhance the ratio of spatial thermal comfort and provides adaptive opportunities that lead to an improvement of thermal comfort for all persona types.
+
+\end{itemize}
+
+
+Overall, the results of the case study emphasised the value of integrating spatial and personal diversity, as well as the effect of PCS into thermal comfort evaluation workflows. The study showed that \gls{pcs} can be a valuable tool in providing opportunities for personal adaptation and reducing thermal heterogeneity in dynamic indoor environments.
+
+Our proposal provides an alternative to the conventional practise of thermal comfort modelling in the early stages of building design. Many modern buildings are monotonous, uncomfortable, and inefficient. By using  \gls{pcs} with data-driven modelling practises that foster flexibility, individual adaptation, and relaxing air conditioning set points, we can create stimulating and dynamic environments that satisfy occupants rather than imposing a "one-size-fits-all" indoor climate.
+
+The study showed the potential of data-driven applications. The increasing amount of data generated in the built environment should be used to better understand the preferences and demands of occupants. The widespread implementation of flexible and low-energy technologies can be an effective way to address these individual needs. However, to actually achieve an improvement in energy efficiency and occupant comfort, we need to learn from the data we generate in increasing volumes and on a daily basis in the built environment.
+
+We hope that making the \textit{comfortSIM} code openly available will facilitate collaborative exchange and inform improvement of this concept, eventually leading to adoption in practice. We encourage fellow researchers to contribute their data, ideas, and feedback to improve the framework and its implementation. This will support our idea of future thermal comfort modelling that is transparent, data-driven, and occupant-centred.
+
+\subsubsection*{Limitations}
+
+It is important to acknowledge the limitations of our study. First, the quantity of underlying data is limited and prevents the broader application of this concept at this stage. More personalised thermal comfort data from actual buildings is required to improve the performance of the \gls{ml} algorithms, consolidate the classification scheme, and estimate the impact of \gls{pcs} on individual thermal comfort. The increased propagation of low-cost indoor environmental sensors in buildings will significantly contribute to this required increase in data in the future.
+
+Furthermore, in its current form, the influence of air movement is only incorporated in a simplified way. There is a need for a wider implementation of the method of testing for fans that provide the cooling effect for different products. ASHRAE 216 can be used for ceiling fans, but a test for other types of fans is not available yet. 
+
+Another limitation is the lack of a comprehensive sensitivity analysis investigating the impact of the classification model, the \gls{ml} algorithms, and \gls{pcs} definitions on the prediction results. Future research will explore the opportunity to create a hybrid validation dataset, a combination of monitoring and simulation data, to further test and refine the proposed method and its components. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Acknowledgements}
+\noindent This research was supported by the Building 4.0 CRC.
+
+\section*{Additional information}
+\noindent The program code written for this study can be accessed on the projects GitHub page: \url{ https://github.com/t-kramer/comfortSIM}. The Python library will be released with publication of this manuscript. The most current version can also be found on GitHub.
