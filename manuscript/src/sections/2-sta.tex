@@ -1,0 +1,17 @@
+%! Author = t.kramer
+%! Date = 15/09/2024
+
+\section{spatial Thermal Autonomy}
+\label{sec:sta}
+
+
+% Metric
+Building on an initial concept proposed by \citet{levitt_thermal_2013} and a similar metric in the field of daylight, the sDA \citep{heschong_approved_2012}, we define spatial Thermal Autonomy (sTA) as the \textit{percentage of floor area during annual occupied time where a thermal zone meets or exceeds a given set of thermal comfort acceptability criteria through passive means only}.
+
+One of the key limitations of traditional metrics involving PMV is their tendency to indirectly promote excessive energy use by prescribing a narrow temperature range that often requires active conditioning systems to achieve. The sTA introduces a paradigm shift by initially evaluating and optimizing the passive performance of a building design before considering the use of active systems to address potentially uncomfortable hours. This approach not only redirects focus towards enhancing passive performance and promoting energy autonomy and resilience but also lays the groundwork for the broader adoption of personal comfort systems (PCS). A major barrier to PCS adoption is their integration into existing building systems; by highlighting spatial variability within a space, sTA can guide the design and seamless integration of PCS into building operations.
+
+% Implementation in Building Simulation
+The sTA metric can be easily integrated into existing building performance simulation workflows. As a post-processing step, it can be combined with existing indices such as PMV, Adaptive, or temperature-based indices. Computing sTA requires grid-based thermal simulation results. While higher spatial resolution simulations than those required by common standards are not necessary, tools like Ladybug already offer the capability to simulate indoor climate on a flexible grid size, making the implementation of sTA straightforward.
+
+
+

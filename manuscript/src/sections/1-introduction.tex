@@ -1,17 +1,31 @@
 %! Author = t.kramer
-%! Date = 10/06/2023
+%! Date = 15/09/2024
 
-\section{Introduction}
+\section{Research context}
 
-% CONTEXT
-Indoor thermal environments are dynamic and tend to be spatially and temporally heterogeneous \citep{Mishra2016, Clements2019, Kim2019}. Further, the perception of these dynamic conditions is highly diverse and varies significantly between subjects \citep{Schweiker2018, Gauthier2020, Mishra2013}. In stark contrast, conventional thermal comfort evaluation methods during building design are characterised by over-generalisation and a "one-size-fits-all" approach. Designers often ignore the spatial thermal heterogeneity of dynamic indoor environments, apply aggregate thermal comfort models that inadequately reflect individual diversity and favour tightly controlled buildings instead of proactively fostering individual adaptation and passive design solutions. The consequence are monotonous buildings \citep{Altomonte2020} that leave 40\% of its occupants dissatisfied \citep{Graham2021} and actively promote excessive energy use and over-conditioning \citep{Parkinson2021, Sekhar2016, DerribleReeder2015} instead of providing occupant-centred, efficient and comfortable indoor environments.
+% Research context
+Indoor thermal comfort is strongly associated with occupant well-being \citep{altomonte_ten_2020}, overall satisfaction \citep{graham_lessons_2021} and energy use in buildings \citep{yang_thermal_2014}. As such, accurately projecting operational thermal comfort is a critical aspect of early building design.
 
-% OPPORTUNITY
-However, recent advances in low-cost sensor technology \citep{Ji2023}, data-driven approaches driven by data science \citep{Abdelrahman2021, LuoNa2021} and \gls{ai} \citep{Ngarambe2020} as well as the observable paradigm shift toward personalised thermal comfort solutions \citep{KimSchiavon2018} provide a unique opportunity to fundamentally rethink current conventions on early thermal comfort design, evaluation, and planning. 
+% Overview of current metrics
+In the traditional design workflow, thermal comfort assessments rely heavily on simulation data. This data forms the basis for calculating hourly thermal comfort indices, e.g., the Predicted Mean Vote (PMV). This indices are then aggregated into an annual, single-value metric \Cref{fig:typical-workflow}. Common long-term metrics derived from this approach include the \textit{Percentage of Time Outside a PMV} or \textit{Operative Temperature Range} (as outlined by ISO, EN, and ASHRAE standards) and the \textit{Degree Hours} method. Such metrics provide a broad, building-wide assessment of thermal comfort and are instrumental in guiding key design decisions regarding building form, envelope and particularly HVAC system design.
 
-% AIM & OBJECTIVES
-In this work, we propose a framework for a more occupant-focused prediction and evaluation of thermal comfort during building design. To this end, our objectives were (1) to describe the problems of conventional thermal comfort evaluation in the building design phase; (2) to develop a novel workflow of early thermal comfort evaluation that promotes the combination of passive design solutions and active occupant adaptation; and (3) to test the practical implementation of the proposed method.
+\begin{figure*}[h!]
+    \centering
+    \includegraphics[width=8.9cm]{manuscript/src/figures/conventional-workflow.png}
+    \caption{Traditional long-term thermal comfort prediction: Hourly simulated indoor climate data is assessed using thermal comfort index (e.g. PMV) and is aggregated into a single value long-term (e.g. annual) metric. }
+    \label{fig:typical-workflow}
+\end{figure*}
+
+% Critique 
+Despite their widespread use, these traditional thermal comfort metrics have inherent limitations. For instance, \citet{li_improved_2020} found that many of these metrics, including those established in industry standards, show a weak correlation with actual thermal satisfaction among occupants.
+
+Another significant issue is that most long-term metrics featured in standards rely on the Predicted Mean Vote (PMV) index. Recent research has highlighted several shortcomings of the PMV index: it often exhibits poor predictive accuracy \citep{cheung_analysis_2019}, advocates for excessively narrow temperature ranges \citep{arens_are_2010}, and depends on personal factors such as clothing insulation and metabolic activity \citep{gauthier_role_2013}—variables that are inherently unpredictable and often treated as constants in models \citep{carlucci_review_2012}, thus failing to represent real-world behavior accurately. This reliance on rigid assumptions frequently leads to the promotion of overly tight temperature controls, which in turn drives unnecessary energy consumption for space conditioning \citep{fukawa_field_2021, sekhar_thermal_2016}.
+
+Furthermore, conventional metrics typically capture only the temporal variability of thermal comfort, overlooking the spatial differences within a thermal zone. This is a significant oversight, as recent studies have identified pronounced spatial thermal heterogeneity within indoor spaces \citep{mishra_thermal_2016, kramer_personal_2023}.
+
+% Objective  
+The objective of this paper is to introduce a new metric for comfort-based building performance assessment: spatial Thermal Autonomy (sTA). Compared to traditional metrics, sTA offers two significant advantages: (a) it accounts for spatial thermal variability, ensuring a more comprehensive evaluation of comfort throughout a building, and (b) it emphasizes energy-autonomous, passive building performance, reducing dependence on external energy sources.
 
 
-% OUTLINE
-% Initially, we outline the contextual problem of our study and contrast the issues of common thermal comfort prediction methods with the opportunities provided by recent technological trends. We then introduce our proposal for a spatially resolved and personalised approach to early thermal comfort evaluation. This is followed by a test of the methods practical implementation in a case study. Lastly, we discuss emerging questions around the adoption of our framework into practice.
+
+
