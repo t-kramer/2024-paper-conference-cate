@@ -1,11 +1,11 @@
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.8\textwidth]{manuscript/src/figures/sim-geometry.png}
+    \includegraphics[width=0.8\textwidth]{manuscript/src/figures/scenario-size.png}
     \vspace{0.5cm}
     % \caption{Geometry of case study model.}
 
-        \renewcommand{\arraystretch}{1.5}
+        \renewcommand{\arraystretch}{1.25}
     
 
         \begin{tabular}{ p{3.5cm} p{2cm} p{2cm} p{2cm} }
@@ -16,7 +16,7 @@
         
             \hline
         
-            {Climates}  & \multicolumn{3}{l}{Brisbane (Cfa)} \\
+            {Climates}  & \multicolumn{3}{l}{Sydney, Australia (Cfa), TMY \& 2070 (RCP 4.5)} \\
         
             % \cline{2-3}
             
@@ -28,29 +28,28 @@
             
             % \cline{2-3}
         
-            {HVAC system} & \multicolumn{3}{l}{\textit{IdealAir system}, \textit{Air conditioned}} \\
+            {HVAC system} & \multicolumn{3}{l}{IdealAir system, Air conditioned} \\
         
             % \cline{2-3}
 
-            {\textbf{Case}} & {a) \textbf{Baseline}} & {b) \textbf{Mixed-Mode}} & {c) \textbf{PCS}} \\
+            {Passive Design Level} & {a) \textbf{Standard}} & {b) \textbf{Medium}} & {c) \textbf{Advanced}} \\
 
             \cline{2-4}
         
-            {Strategy} & {Standard} & {Mixed-Mode} & {Mixed-Mode} \\
+            {Natural Ventilation?} & {No} & {Yes} & {Yes} \\
+        
 
-             % \cline{2-3}
-
-            {\textit{Passive\newline measures}} & {-} & {NV \newline Ext. shading\newline $U_{win} = 1.3$\newline $U_{wall} = 0.2$} & {PCS\newline NV\newline Ext. shading\newline $U_{win} = 1.3$\newline $U_{wall} = 0.2$} \\
+            {Envelope} & {$U_{win} = 2.0$\newline $U_{wall} = 0.35$\newline $WWR = 0.4$ \newline No shading} & {$U_{win} = 1.3$\newline $U_{wall} = 0.2$\newline $WWR = 0.3$ \newline No shading} & {$U_{win} = 1.3$\newline $U_{wall} = 0.2$\newline $WWR = 0.3$ \newline Ext. shading} \\
 
              % \cline{2-3}
         
-            {Setpoint range\newline \textit{Heating - Cooling}} & {22-24\degree C} & {21-25\degree C} & {19-27\degree C} \\
+            {AC* setpoint range\newline \textit{Heating - Cooling}} & {22-24\degree C} & {22-24\degree C} & {22-24\degree C} \\
             
             \hline
         
         \end{tabular}
         \vspace{0.5cm}
-        \caption{Overview of main settings for simulated case study scenarios: Construction properties, loads and schedules were based on Department of Energy (DOE) reference building information. (NV - Natural ventilation, U - U value in W/m²K)}
+        \caption{Overview of main settings for simulated case study scenarios: Construction properties, loads and schedules were based on Department of Energy (DOE) reference building information. (AC* - Air Conditioning (if used), WWR - Window-to-Wall-Ratio, U - U value in W/m²K)}
         \label{tab:sim-settings}
         
 
