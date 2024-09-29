@@ -6,7 +6,7 @@
 
 
 % Metric
-Building on the initial concept proposed by \citet{levitt_thermal_2013} and a similar metric from the field of daylighting \citep{heschong_approved_2012}, we define spatial Thermal Autonomy (sTA) as the "percentage of floor area where a thermal zone meets or exceeds a given thermal comfort criterion through passive means only". We suggest using both an hourly sTA index (see \Cref{eq:sta-hourly}) and an annual single-value metric (\Cref{eq:sta-annual}). Since the sTA is calculated based on expected passive building performance and based on findings presented in this paper, we recommend using the adaptive comfort model to define the comfort criterion but other comfort metrics could also be used. 
+Building on the initial concept proposed by \citet{levitt_thermal_2013} and a similar metric from the field of daylighting \citep{heschong_approved_2012}, we define spatial Thermal Autonomy (sTA) as the "percentage of floor area where a thermal zone meets or exceeds a given thermal comfort criterion through passive means only". We suggest using both an hourly sTA index (see \Cref{eq:sta-hourly}) and an annual single-value metric (\Cref{eq:sta-annual}). Since the sTA is calculated based on expected passive building performance and based on findings presented in this paper, we recommend using the adaptive comfort model to define the comfort criterion, but other comfort metrics could also be used. 
 
 \begin{equation}\label{eq:sta-hourly}
 sTA_{t} = \frac{\sum_{i=1}^{n} A_i \cdot {1}_{\{i \in \text{comfort}\}}}{A_{total}}
@@ -25,12 +25,12 @@ sTA_{annual} = \frac{\sum_{t=1}^{T_{year}} {1}_{\{\text{sTA}_t \geq 90\%\}}}{T_{
     \item $A_i$ is the area of grid point $i$.
     \item $1_{\{i \in \text{comfort}\}}$ is an indicator function that equals 1 if grid point $i$ satisfies the comfort criterion, and 0 otherwise.
     \item $A_{\text{total}}$ is the total area of the space.
-    \item $1_{\{\text{sTA}_t \geq 90\%\}}$ is 1 if at hour $t$, the hourly spatial Thermal Autonomy $\text{sTA}_t$ is greater than or equal to 90\%, and 0 otherwise,
-    \item $T_{\text{year}}$ is the total number of hours in a year (usually 8760 for a non-leap year).
+    \item $1_{\{\text{sTA}_t \geq 90\%\}}$ is 1 if at hour $t$, the hourly spatial Thermal Autonomy $\text{sTA}_t$ is greater than or equal to 90\%, and 0 otherwise.
+    \item $T_{\text{year}}$ is the total number of hours in a year (usually 8760 h for a non-leap year).
 \end{itemize}
 
 \vspace{0.25cm}
 
-Using sTA to guide building design captures both the temporal and spatial variability of dynamic indoor environments, offering deeper insights into building performance related to comfort. Traditional thermal comfort metrics tend to promote promote excessive energy use by prescribing narrow temperature ranges that frequently require active air conditioning systems \citep{arens_are_2010}. In contrast, sTA introduces a paradigm shift by prioritizing the evaluation and optimization of passive design strategies before resorting to active systems to mitigate uncomfortable conditions. This approach fundamentally shifts the focus to improving the passive performance of a building, prioritizing energy autonomy, and providing resilience to energy demands.
+Using sTA to guide building design captures both the temporal and spatial variability of dynamic indoor environments, offering deeper insights into building performance related to comfort. Traditional thermal comfort metrics tend to promote excessive energy use by prescribing narrow temperature ranges that frequently require active air conditioning systems \citep{arens_are_2010}. In contrast, sTA introduces a paradigm shift by prioritizing the evaluation and optimization of passive design strategies before resorting to active systems to mitigate uncomfortable conditions. This approach fundamentally shifts the focus to improving the passive performance of a building, prioritizing energy autonomy, and providing resilience to energy demands.
 
 

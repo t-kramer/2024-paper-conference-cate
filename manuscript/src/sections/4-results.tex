@@ -26,7 +26,7 @@ In \Cref{fig:zone-mean-v-spatial}, we further explore the variation of indoor te
 \begin{figure}[H]
     \centering
     \includegraphics[width=8.9cm]{manuscript/src/figures/zone-mean-v-spatial.png}
-    \caption{Distribution of hourly differences between zone-mean MRT and spatially-resolved MRT: Simulating temperature only for the center of the zone (traditional method) overlooks significant thermal fluctuations within the space. of up to 7 K.}
+    \caption{Distribution of hourly differences between zone-mean MRT and spatially-resolved MRT: Simulating temperature only for the center of the zone (traditional method) overlooks significant thermal fluctuations within the space.}
     \label{fig:zone-mean-v-spatial}
 \end{figure}
 
@@ -36,14 +36,14 @@ In \Cref{fig:zone-mean-v-spatial}, we further explore the variation of indoor te
 
 In \Cref{fig:model-comparison}.a, we present the distributions of the predicted sTA values hourly using three different thermal comfort indices: PMV, Adaptive, and an Empirical approach based on the ASHRAE Global Thermal Comfort Database II. Across all construction standards tested, the PMV index consistently resulted in the lowest hourly sTA values, with a nearly binary distinction between comfortable and uncomfortable conditions. In contrast, the Adaptive and Empirical models led to generally higher sTA predictions, reflecting a smoother and more gradual transition between low and high hourly sTA values. Moreover, as construction standards improved, we observed an increase in the ratio of higher sTA values, particularly when using the Adaptive and Empirical models. These indices appeared to be more sensitive to changes in envelope performance, capturing the impact of passive design measures more effectively than the PMV index.
 
-Figure \Cref{fig:model-comparison}.b compares the annual sTA values calculated using the three thermal comfort indices, considering different thresholds of the area ratio (see \Cref{eq:sta-annual}). Similarly to the hourly analysis, the PMV index led the lowest annual sTA in all thresholds tested. Only when a low area ratio threshold of 50\% was applied did the sTA values exceed 0.5. In comparison, the adaptive model again consistently predicted higher annual sTA values, independent of construction standards. An improvement in those further enhanced the sTA, with thresholds as high as 80\% still producing sTA values above 0.6, and in the case of high standards, up to 0.8.
+\Cref{fig:model-comparison}.b compares the annual sTA values calculated using the three thermal comfort indices, considering different thresholds of the area ratio (see \Cref{eq:sta-annual}). Similarly to the hourly analysis, the PMV index led the lowest annual sTA in all thresholds tested. Only when a low area ratio threshold of 50\% was applied did the sTA values exceed 0.5. In comparison, the adaptive model again consistently predicted higher annual sTA values, independent of construction standards. An improvement in those further enhanced the sTA, with thresholds as high as 80\% still producing sTA values above 0.6, and in the case of high standards, up to 0.8.
 
 The empirical model generated the highest overall sTA values. For the highest construction standards, all area ratio thresholds resulted in sTA values above 0.9, indicating wider comfort ranges and a stronger alignment between passive design and thermal autonomy under this model.
 
 \begin{figure*}[h!]
     \centering
     \includegraphics[width=\textwidth]{manuscript/src/figures/model-comparison.png}
-    \caption{a) a) Hourly sTA distributions using PMV, Adaptive, and Empirical models for different passive design levels and medium zone size: Adaptive and Empirical model tend to predict higher sTA$_{hourly}$ and are more sensitive passive design measures; b) Annual sTA comparison across comfort models for varying area ratio thresholds.: Adaptive and Emprical model consistently predict higher sTA$_{annual}$ then PMV, independent of chosen area threshold.}
+    \caption{a) Hourly sTA distributions using PMV, Adaptive, and Empirical models for different passive design levels and medium zone size: Adaptive and Empirical model tend to predict higher sTA$_{hourly}$ and are more sensitive passive design measures; b) Annual sTA comparison across comfort models for varying area ratio thresholds.: Adaptive and Empirical model consistently predict higher sTA$_{annual}$ then PMV, independent of chosen area threshold.}
     \label{fig:model-comparison}
 \end{figure*}
 
