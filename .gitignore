@@ -1,3 +1,2 @@
 .venv/
-
-export/img
+.DS_Store
